@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+}
+
+.main-content {
+  width: 100vw;
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 125px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.bananeira {
+  width: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.card {
+  padding: 30px 0px;
+}
+
+.text-content {
+  padding: 40px 30px;
+  background-color: white;
+}
+
+.title {
+  font-family: "Baskervville", serif;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-top: 0px;
+}
+
+.bio {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.training {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.instagram {
+  width: 20px;
+}
+
+.footer {
+  margin: 0;
+  padding: 5px;
+  font-size: 0.7em;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+.footer p {
+  margin: 0px;
+}
+
+/* Desktop */
+@media (min-width: 750px) {
+  .main-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    height: 800px;
+    margin-bottom: 0px;
+  }
+
+  .card {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 600px;
+  }
+
+  .bananeira {
+    position: relative;
+    width: unset;
+    opacity: 0.9;
+  }
+
+  .title {
+    font-size: 3em;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+  .bio {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+
+  .training {
+    margin-bottom: 50px;
+  }
+}
