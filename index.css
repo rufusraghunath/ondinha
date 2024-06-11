@@ -60,7 +60,7 @@ body {
 
 .footer {
   margin: 0;
-  padding: 5px;
+  padding: 5px 7px;
   font-size: 0.7em;
   background-color: white;
   position: fixed;
@@ -78,22 +78,28 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    height: 800px;
+    /* height: 800px; */
+    height: 100vh;
     margin-bottom: 0px;
-  }
-
-  .card {
-    padding: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 600px;
   }
 
   .bananeira {
     position: relative;
     width: unset;
     opacity: 0.9;
+  }
+
+  .card {
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 600px;
+  }
+
+  .text-content {
+    padding: 0px 30px;
+    background-color: white;
   }
 
   .title {
@@ -110,4 +116,14 @@ body {
   .training {
     margin-bottom: 50px;
   }
+
+  .footer {
+    background-color: unset;
+    color: mintcream;
+  }
 }
+
+/*
+TODO 
+- Get mobile to work properly
+*/
