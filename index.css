@@ -13,9 +13,13 @@ body {
   margin-bottom: 50px;
 }
 
+.logo-lang {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
 .logo {
   width: 125px;
-  margin-left: 30px;
   margin-bottom: 30px;
 }
 
@@ -125,6 +129,6 @@ body {
 
 /*
 TODO 
-- Get mobile to work properly
-- Translation
+- Get mobile styles to work properly
+- Figure out better image placement for mobile
 */
