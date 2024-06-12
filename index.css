@@ -9,8 +9,23 @@ body {
 }
 
 .main-content {
-  width: 100vw;
-  margin-bottom: 50px;
+  display: flex;
+  height: 100vh;
+  min-width: 350px;
+  margin-bottom: 0px;
+}
+
+.bananeira {
+  opacity: 0.8;
+}
+
+.card {
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 600px;
+  min-width: 500px;
 }
 
 .logo-lang {
@@ -23,39 +38,27 @@ body {
   margin-bottom: 30px;
 }
 
-.bananeira {
-  width: 100%;
-  opacity: 0.7;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-
-.card {
-  padding: 30px 0px;
-}
-
 .text-content {
-  padding: 40px 30px;
+  padding: 0px 30px;
   background-color: white;
 }
 
 .title {
   font-family: "Baskervville", serif;
   font-size: 3em;
+  margin-top: 0px;
+  margin-bottom: 50px;
   font-weight: 400;
   line-height: 1.1;
-  margin-top: 0px;
 }
 
 .bio {
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .training {
-  margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .instagram {
@@ -63,72 +66,63 @@ body {
 }
 
 .footer {
-  margin: 0;
-  padding: 5px 7px;
-  font-size: 0.7em;
-  background-color: white;
   position: fixed;
-  bottom: 0;
   width: 100vw;
+  bottom: 0;
+  margin: 5px 7px;
+  font-size: 0.7em;
+  color: mintcream;
 }
 
 .footer p {
   margin: 0px;
 }
 
-/* Desktop */
-@media (min-width: 750px) {
+/* Mobile */
+@media only screen and (max-width: 680px) {
   .main-content {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    /* height: 800px; */
-    height: 100vh;
-    margin-bottom: 0px;
+    width: 100vw;
+    max-height: 800px;
+    margin-bottom: 50px;
+    justify-content: unset;
   }
 
   .bananeira {
-    position: relative;
-    width: unset;
-    opacity: 0.9;
+    width: 100%;
+    min-width: 350px;
+    top: -425px;
+    opacity: 0.6;
+    position: absolute;
+    z-index: -1;
   }
 
   .card {
-    padding: 80px 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 600px;
+    padding: 30px 0px;
+    width: 100%;
+    max-width: none;
+    min-width: 350px;
   }
 
   .text-content {
-    padding: 0px 30px;
+    padding: 40px 30px;
     background-color: white;
   }
 
   .title {
-    font-size: 3em;
-    margin-top: 0px;
-    margin-bottom: 50px;
+    font-size: 2.5em;
   }
 
   .bio {
-    margin-top: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .training {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .footer {
-    background-color: unset;
-    color: mintcream;
+    margin: 30px;
+    color: black;
+    position: relative;
   }
 }
-
-/*
-TODO 
-- Get mobile styles to work properly
-- Figure out better image placement for mobile
-*/
