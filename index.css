@@ -62,6 +62,11 @@ body {
   margin-bottom: 40px;
 }
 
+.schedule-title {
+  font-family: "Baskervville", serif;
+  font-size: 25px;
+}
+
 .day-title {
   font-family: "Baskervville", serif;
   font-size: 20px;
