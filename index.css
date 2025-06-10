@@ -19,6 +19,11 @@ body {
   height: 100vh;
 }
 
+.circle {
+  opacity: 0.7;
+  height: 100vh;
+}
+
 .card {
   padding: 80px 60px 100px 60px;
   display: flex;
@@ -57,9 +62,14 @@ body {
   width: 20px;
 }
 
-.bio {
+.p-margin-bottom {
   margin-top: 0px;
   margin-bottom: 40px;
+}
+
+.p-margin-bottom-big {
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 
 .schedule-title {
@@ -72,6 +82,10 @@ body {
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 5px;
+}
+
+.signatories {
+  font-size: 0.8em;
 }
 
 .footer {
@@ -92,16 +106,40 @@ body {
     width: 100vw;
     margin-bottom: 50px;
     justify-content: unset;
+    flex-direction: column;
+  }
+
+  .main-content.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .img-wrapper {
+    width: 100vw;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
   }
 
   .bananeira {
-    width: 100%;
-    min-width: 350px;
-    top: -425px;
-    opacity: 0.6;
     position: absolute;
-    z-index: -1;
+    bottom: -40px;
+    opacity: 0.6;
+  }
+
+  .circle {
+    width: 100%;
     height: unset;
+    opacity: 0.5;
+  }
+
+  .logo {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+  }
+
+  .logo-lang {
+    margin-bottom: 30px;
   }
 
   .card {
@@ -112,7 +150,7 @@ body {
   }
 
   .text-content {
-    padding: 40px 30px;
+    padding: 0 30px;
     background-color: white;
   }
 
@@ -125,8 +163,12 @@ body {
     margin-bottom: 30px;
   }
 
-  .bio {
+  .p-margin-bottom {
     margin-bottom: 30px;
+  }
+
+  .p-margin-bottom-big {
+    margin-bottom: 40px;
   }
 
   .footer {
