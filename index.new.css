@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+}
+
+.main-content {
+  display: flex;
+  min-width: 350px;
+  margin-bottom: 0px;
+}
+
+.grid {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: min-content min-content;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.filler {
+  /* height: 300px;
+  width: 500px; */
+}
+
+.resistencia {
+  background-color: green;
+  height: 600px;
+
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  /* TODO: refactor to grid-area syntax */
+}
+
+.au {
+  background-color: yellow;
+  height: 600px;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 5;
+  grid-column-end: 9;
+}
+
+.circle {
+  background-color: red;
+  height: 600px;
+`
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 9;
+}
+
+.bananeira {
+  background-color: blue;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 9;
+  grid-column-end: 13;
+}
+
+.polaroid {
+  /* width: 30vw; */
+}
+
+.community {
+  /* width: 60vw; */
+}
+
+.footer {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  margin: 5px 7px;
+  font-size: 0.7em;
+}
+
+.footer p {
+  margin: 0px;
+}
