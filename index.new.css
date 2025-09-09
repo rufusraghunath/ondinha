@@ -16,73 +16,53 @@ body {
 
 .grid {
   width: 100vw;
-  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: min-content min-content;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
 }
 
-.filler {
-  /* height: 300px;
-  width: 500px; */
-}
-
-.resistencia {
-  background-color: green;
-  height: 600px;
-
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 2;
-
-  /* TODO: refactor to grid-area syntax */
-}
-
-.au {
-  background-color: yellow;
-  height: 600px;
-
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 5;
-  grid-column-end: 9;
-}
-
-.circle {
-  background-color: red;
-  height: 600px;
-`
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 9;
-}
-
-.bananeira {
-  background-color: blue;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 9;
-  grid-column-end: 13;
+.polaroid-wrapper {
+  position: relative;
 }
 
 .polaroid {
-  /* width: 30vw; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.community {
-  /* width: 60vw; */
+.resistencia {
+  grid-area: 1 / 1 / 2 / 5;
+  /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
 }
+
+.au {
+  grid-area: 1 / 5 / 2 / 9;
+}
+
+.roda {
+  grid-area: 2 / 1 / 3 / 9;
+}
+
+.bananeira {
+  grid-area: 1 / 9 / 3 / 13;
+}
+/* 
+.title {
+  font-family: "Baskervville", serif;
+  font-size: 3em;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-weight: 400;
+  line-height: 1.1;
+} */
 
 .footer {
-  position: fixed;
   width: 100vw;
   bottom: 0;
   margin: 5px 7px;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 .footer p {
