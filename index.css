@@ -10,12 +10,12 @@ body {
 
 .main-content {
   display: flex;
-  min-width: 350px;
+  min-width: 1300px;
   margin-bottom: 0px;
 }
 
 .photo-grid {
-  width: 100vw;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 5px;
