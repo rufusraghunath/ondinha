@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+}
+
+.main-content {
+  display: flex;
+  min-width: 350px;
+  margin-bottom: 0px;
+}
+
+.bananeira {
+  opacity: 0.8;
+  height: 100vh;
+}
+
+.circle {
+  opacity: 0.7;
+  height: 100vh;
+}
+
+.card {
+  padding: 80px 60px 100px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 600px;
+  min-width: 500px;
+}
+
+.logo-lang {
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 125px;
+  margin-bottom: 30px;
+}
+
+.text-content {
+  padding: 0px 30px;
+  background-color: white;
+}
+
+.title {
+  font-family: "Baskervville", serif;
+  font-size: 3em;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.instagram {
+  margin-bottom: 30px;
+  width: 20px;
+}
+
+.p-margin-bottom {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.p-margin-bottom-big {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.schedule-title {
+  font-family: "Baskervville", serif;
+  font-size: 25px;
+}
+
+.day-title {
+  font-family: "Baskervville", serif;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.signatories {
+  font-size: 0.8em;
+}
+
+.footer {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  margin: 5px 7px;
+  font-size: 0.7em;
+}
+
+.footer p {
+  margin: 0px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 680px) {
+  .main-content {
+    width: 100vw;
+    margin-bottom: 50px;
+    justify-content: unset;
+    flex-direction: column;
+  }
+
+  .main-content.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .img-wrapper {
+    width: 100vw;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .bananeira {
+    position: absolute;
+    bottom: -40px;
+    opacity: 0.6;
+  }
+
+  .circle {
+    width: 100%;
+    height: unset;
+    opacity: 0.5;
+  }
+
+  .logo {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+  }
+
+  .logo-lang {
+    margin-bottom: 30px;
+  }
+
+  .card {
+    padding: 30px 0px;
+    width: 100%;
+    max-width: none;
+    min-width: 350px;
+  }
+
+  .text-content {
+    padding: 0 30px;
+    background-color: white;
+  }
+
+  .title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+
+  .p-margin-bottom {
+    margin-bottom: 30px;
+  }
+
+  .p-margin-bottom-big {
+    margin-bottom: 40px;
+  }
+
+  .footer {
+    margin: 30px;
+    position: relative;
+  }
+}
