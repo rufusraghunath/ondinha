@@ -1,7 +1,11 @@
 let slideIndex = 1;
 let slideChangeInterval;
 
-function moveSlideshow(n) {
+function moveSlideshow(n, stopAutoPlay = false) {
+  if (stopAutoPlay) {
+    clearInterval(slideChangeInterval);
+  }
+
   const newIndex = slideIndex + n;
   const slides = document.getElementsByClassName("slide");
 
@@ -30,10 +34,8 @@ document.addEventListener("keydown", function (e) {
   const key = e.key;
 
   if (key === "ArrowLeft") {
-    moveSlideshow(-1);
-    clearInterval(slideChangeInterval);
+    moveSlideshow(-1, true);
   } else if (key === "ArrowRight") {
-    moveSlideshow(1);
-    clearInterval(slideChangeInterval);
+    moveSlideshow(1, true);
   }
 });
