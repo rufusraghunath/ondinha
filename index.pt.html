@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
     <title>Ondinha</title>
@@ -18,24 +18,43 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Capoeira for beginners in Berlin" />
     <meta name="keywords" content="Capoeira, Beginners, Berlin" />
+    <script src="assets/js/slideshow.js"></script>
   </head>
 
   <body>
     <main class="main-content">
       <div class="photo-grid">
-        <div class="polaroid-wrapper bottom-left-middle">
-          <img class="polaroid roda" src="assets/circle-smaller.jpeg" />
+        <div class="slideshow">
+          <a href="index.html">
+            <div class="logo-white-container">
+              <img class="logo-white" src="assets/logo-transparent-white.png" />
+            </div>
+          </a>
+          <div class="prev" onclick="moveSlideshow(-1)"></div>
+          <div class="next" onclick="moveSlideshow(1)"></div>
+          <img class="slide" src="assets/slideshow/bateria.jpg" />
+          <img class="slide" src="assets/slideshow/armada.jpg" />
+          <img class="slide" src="assets/slideshow/chamada.JPG" />
+          <img class="slide" src="assets/slideshow/queixada.jpg" />
+          <img class="slide" src="assets/slideshow/aú.jpg" />
+          <img class="slide" src="assets/slideshow/meia-lua.jpg" />
+          <img class="slide" src="assets/slideshow/ponte-baixa.JPG" />
+          <img class="slide" src="assets/slideshow/catch.jpg" />
+          <img class="slide" src="assets/slideshow/saudação.JPG" />
+          <img class="slide" src="assets/slideshow/buying.jpg" />
+          <img class="slide" src="assets/slideshow/instruments.JPG" />
+          <img class="slide" src="assets/slideshow/tshirt.JPG" />
         </div>
 
-        <div class="polaroid-wrapper text-card about">
+        <div id="about" class="polaroid-wrapper text-card about">
           <div class="logo-lang">
             <a href="index.html"
               ><img class="logo" src="assets/ondinha-logo.png"
             /></a>
             <div class="lang-select">
-              <a class="lang-option" href="index.html">EN</a> |
-              <a class="lang-option" href="index.de.html">DE</a> |
-              <a class="lang-option" href="index.pt.html">PT</a>
+              <a class="lang-option" href="index.html#about">EN</a> |
+              <a class="lang-option" href="index.de.html#about">DE</a> |
+              <a class="lang-option" href="index.pt.html#about">PT</a>
             </div>
           </div>
           <h1 class="title">Capoeira para iniciantes</h1>
@@ -61,8 +80,8 @@
             <p class="p-margin-bottom">
               Ondinha pratica capoeira desde 2010 e recebeu o título de
               Instrutor em 2019. Ele mora em Berlim mas já ensinou em EUA,
-              Alemanha, Índia, China e Singapura. Ondinha é aluno do Baris
-              Yazar.
+              Alemanha, Índia, China e Singapura. Ondinha é aluno do
+              Contramestre Baris Yazar.
             </p>
 
             <h2 class="subtitle">O que esperar</h2>
@@ -106,6 +125,10 @@
               <a href="mailto:hello@ondinha.com">entre em contato</a></i
             >
           </div>
+        </div>
+
+        <div class="polaroid-wrapper bottom-left-middle">
+          <img class="polaroid roda" src="assets/circle-smaller.jpeg" />
         </div>
 
         <div class="polaroid-wrapper middle-left">

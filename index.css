@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  position: relative;
 }
 
 .main-content {
@@ -22,11 +23,68 @@ body {
   grid-row-gap: 5px;
 }
 
+.slideshow {
+  position: relative;
+  grid-area: 1 / 1 / 2 / 13;
+}
+
+.slide {
+  max-height: 100vh;
+}
+
+.logo-white-container {
+  background-color: rgb(2, 9, 72);
+  border-radius: 5%;
+  position: absolute;
+  height: 100px;
+  height: 100px;
+  padding: 10px 0;
+  top: 30px;
+  left: 30px;
+}
+
+.logo-white {
+  height: 100%;
+}
+
+.prev,
+.next {
+  position: absolute;
+  align-self: anchor-center;
+  margin: 30px;
+  width: 0;
+  height: 0;
+}
+
+.prev {
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 30px solid rgba(255, 255, 255, 0.5);
+}
+
+.prev:hover {
+  border-right: 30px solid white;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid rgba(255, 255, 255, 0.5);
+}
+
+.next:hover {
+  border-left: 30px solid white;
+  cursor: pointer;
+}
+
 .polaroid-wrapper {
   position: relative;
 }
 
-.polaroid {
+.polaroid,
+.slide {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -43,28 +101,28 @@ body {
 }
 
 .top-left {
-  grid-area: 1 / 1 / 2 / 5;
-}
-
-.about {
-  grid-area: 1 / 5 / 3 / 9;
-}
-
-.top-right {
-  grid-area: 1 / 9 / 2 / 13;
-}
-
-.middle-left {
   grid-area: 2 / 1 / 3 / 5;
   /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
 }
 
+.about {
+  grid-area: 2 / 5 / 4 / 9;
+}
+
+.top-right {
+  grid-area: 2 / 9 / 3 / 13;
+}
+
+.middle-left {
+  grid-area: 3 / 1 / 4 / 5;
+}
+
 .bottom-left-middle {
-  grid-area: 3 / 1 / 4 / 9;
+  grid-area: 4 / 1 / 5 / 9;
 }
 
 .middle-bottom-right {
-  grid-area: 2 / 9 / 4 / 13;
+  grid-area: 3 / 9 / 6 / 13;
 }
 
 .logo-lang {
@@ -145,6 +203,25 @@ body {
 
   .photo-grid {
     display: block;
+  }
+
+  .logo-white-container {
+    height: 70px;
+    height: 70px;
+    padding: 7px 0;
+    top: 20px;
+    left: 20px;
+  }
+
+  .slide {
+    max-height: 250px;
+  }
+
+  .prev,
+  .next {
+    margin: 20px;
+    align-self: unset;
+    bottom: 0;
   }
 
   .roda {
