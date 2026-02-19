@@ -30,8 +30,10 @@
               <img class="logo-white" src="assets/logo-transparent-white.png" />
             </div>
           </a>
-          <div class="prev" onclick="moveSlideshow(-1, true)"></div>
-          <div class="next" onclick="moveSlideshow(1, true)"></div>
+
+          <button class="prev" onclick="moveSlideshow(-1, true)"></button>
+          <button class="next" onclick="moveSlideshow(1, true)"></button>
+
           <img class="slide" src="assets/slideshow/bateria.jpg" />
           <img class="slide" src="assets/slideshow/armada.jpg" />
           <img class="slide" src="assets/slideshow/chamada.jpg" />
@@ -44,6 +46,12 @@
           <img class="slide" src="assets/slideshow/buying.jpg" />
           <img class="slide" src="assets/slideshow/instruments.jpg" />
           <img class="slide" src="assets/slideshow/tshirt.jpg" />
+
+          <button class="info-hint" onclick="scrollToInfo()">
+            <span class="arrow-down"></span>
+            <span>Info</span>
+          </button>
+          <img class="waves" src="assets/waves.svg" />
         </div>
 
         <div id="about" class="polaroid-wrapper text-card about">
