@@ -1,0 +1,27 @@
+{
+  "landingPage": {
+    "hero": {
+      "tagline": "Capoeira for beginners",
+      "cta": "Get in touch"
+    },
+    "info": {
+      "more": "Read more",
+      "capoeira": {
+        "heading": "What is capoeira?",
+        "body": "Capoeira is a unique blend of dance, martial art, game, and music. It is part of the rich legacy of Afro-Brazilian culture, created in resistance to colonialism and slavery. Today, capoeira is practiced all over the world and has been recognized by UNESCO as part of humanity's intangible cultural heritage. It's also a great way to get fit, have fun, and make friends!"
+      },
+      "teacher": {
+        "heading": "Our teacher",
+        "body": "Ondinha (on-DJEEN-ya) has been a practitioner of capoeira since 2010, receiving the title of instructor in 2019. Based in Berlin, he has also taught in the US, India, China, and Singapore. He is a student of Contramestre Baris Yazar."
+      },
+      "classes": {
+        "heading": "",
+        "body": "Our classes are based on the four pillars of conditioning, technique, play, and ritual. The aim is to challenge, have fun, and inspire exploration. Learn more about our principles. For beginners, we place a particular emphasis on developing physical literacy, working with the Movement Rituals methodology to develop a solid base for capoeira."
+      }
+    },
+    "schedule": {
+      "heading": "",
+      "body": ""
+    }
+  }
+}

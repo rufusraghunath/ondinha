@@ -4,9 +4,14 @@
   line-height: 1.4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   position: relative;
+  background-color: white;
 }
 
 button {
@@ -21,7 +26,7 @@ button {
 
 .main-content {
   display: flex;
-  min-width: 1300px;
+  min-width: 1500px;
   margin-bottom: 0px;
 }
 
@@ -33,6 +38,54 @@ button {
   grid-row-gap: 5px;
 }
 
+.cta-container-mobile {
+  display: none;
+}
+
+.cta-container {
+  z-index: 99;
+  position: absolute;
+  bottom: 0;
+  padding: 0px;
+  margin: 13px 80px;
+  text-align: end;
+  display: flex;
+  gap: 30px;
+}
+
+.cta-container .title {
+  line-height: 0.8;
+}
+
+.cta-container .in-berlin,
+.cta-container-mobile .in-berlin {
+  font-style: italic;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: baseline;
+  border-left: 2px solid rgb(70, 70, 70);
+  padding-left: 30px;
+}
+
+.cta {
+  background-color: rgb(2, 9, 72);
+  border-radius: 5%;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.2em;
+}
+
+.cta:hover {
+  background-color: rgb(73, 76, 165);
+}
+
 .slideshow {
   position: relative;
   grid-area: 1 / 1 / 2 / 13;
@@ -42,7 +95,8 @@ button {
   color: rgb(70, 70, 70);
   position: absolute;
   bottom: 0;
-  padding-bottom: 20px;
+  right: 0;
+  padding: 20px 30px;
   z-index: 99;
   display: flex;
   justify-self: center;
@@ -59,9 +113,18 @@ button {
 
 .waves {
   width: 100%;
-  height: 100px;
+  height: 400px;
   position: absolute;
   bottom: 0;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.waves-upside-down {
+  margin-bottom: -375px;
+  z-index: 3;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
 }
 
 .waves path {
@@ -69,7 +132,9 @@ button {
 }
 
 .slide {
-  max-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
 }
 
 .logo-white-container {
@@ -121,8 +186,7 @@ button {
   position: relative;
 }
 
-.polaroid,
-.slide {
+.polaroid {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -134,10 +198,6 @@ button {
   opacity: 90%;
 }
 
-.au {
-  opacity: 85%;
-}
-
 .top-left {
   grid-area: 2 / 1 / 3 / 5;
   /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
@@ -145,6 +205,8 @@ button {
 
 .about {
   grid-area: 2 / 5 / 4 / 9;
+  z-index: 9;
+  margin-top: 100px;
 }
 
 .top-right {
@@ -159,8 +221,41 @@ button {
   grid-area: 4 / 1 / 5 / 9;
 }
 
+.top-middle-right {
+  grid-area: 2 / 9 / 4 / 13;
+}
+
+.middle-right {
+  grid-area: 3 / 9 / 5 / 13;
+}
+
 .middle-bottom-right {
   grid-area: 3 / 9 / 6 / 13;
+}
+
+.bottom-right {
+  grid-area: 4 / 9 / 5 / 13;
+}
+
+.bottom {
+  height: 100%;
+  position: relative;
+  margin-top: 50px;
+  background-color: beige;
+  grid-area: 4 / 1 / 5 / 13;
+}
+
+.videos {
+  grid-area: 7 / 5 / 8 / 9;
+}
+
+.videos iframe {
+  width: 100%;
+}
+
+.faq {
+  grid-area: 8 / 5 / 9 / 9;
+  /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
 }
 
 .logo-lang {
@@ -183,15 +278,13 @@ button {
 
 .title {
   font-family: "Baskervville", serif;
-  font-size: 4em;
-  margin-top: 0px;
-  margin-bottom: 50px;
+  font-size: 3em;
+  margin: 0px;
   font-weight: 400;
   line-height: 1.1;
 }
 
 .instagram {
-  margin-bottom: 80px;
   width: 25px;
 }
 
@@ -270,15 +363,33 @@ button {
     display: none;
   }
 
-  .roda {
-    max-height: 20vh;
-    object-position: top;
-    opacity: 80%;
+  .about {
+    margin-top: 0px;
+  }
+
+  .cta-container {
+    display: none;
+  }
+
+  .cta-container-mobile {
+    display: block;
   }
 
   .title {
     font-size: 2.5em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+
+  .cta {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .resistencia,
+  .bateria,
+  .bananeira,
+  .bottom {
+    display: none;
   }
 
   .subtitle {
@@ -290,7 +401,7 @@ button {
   }
 
   .instagram {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     width: 20px;
   }
 
@@ -300,5 +411,6 @@ button {
 
   .footer {
     text-align: center;
+    font-size: 0.7em;
   }
 }

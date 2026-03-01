@@ -23,10 +23,6 @@ function moveSlideshow(n, stopAutoPlay = false) {
   slides[slideIndex - 1].style.display = "block";
 }
 
-function scrollToInfo() {
-  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
-}
-
 document.addEventListener("DOMContentLoaded", function () {
   moveSlideshow(0);
   slideChangeInterval = setInterval(function () {
