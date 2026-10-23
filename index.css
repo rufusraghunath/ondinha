@@ -151,6 +151,7 @@ button {
 }
 
 .logo-white-container {
+  z-index: 1;
   background-color: rgb(2, 9, 72);
   border-radius: 5%;
   position: absolute;
