@@ -76,6 +76,10 @@
   grid-area: 2 / 5 / 5 / 9;
 }
 
+.friendship {
+  width: 100%;
+}
+
 .footer {
   position: absolute;
 }
