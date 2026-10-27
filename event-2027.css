@@ -5,7 +5,6 @@
 
 .logo-black-container {
   z-index: 1;
-  /* background-color: rgb(2, 9, 72); */
   border-radius: 5%;
   position: absolute;
   height: 100px;
@@ -18,10 +17,28 @@
 .logo-black {
   height: 100%;
 }
+
 .poster {
   height: 100vh;
   position: relative;
 }
+
+.ondinha-presents {
+  color: white;
+  position: absolute;
+  z-index: 1;
+  margin-top: 30px;
+  justify-self: center;
+  font-size: 1.2em;
+}
+
+.white-line {
+  border-bottom: 1px solid white;
+  width: 40%;
+  margin-top: 10px;
+  justify-self: center;
+}
+
 .poster-k-container {
   margin-top: -500px;
 }
@@ -100,6 +117,10 @@
     min-width: 350px;
   }
 
+  .ondinha-presents {
+    display: none;
+  }
+
   .poster-k-container {
     margin-top: -100px;
   }
@@ -109,12 +130,21 @@
     /* transform: scale(1.2); */
   }
 
+  .cta-container-mobile {
+    margin-bottom: 30px;
+  }
+
+  .logo-lang {
+    margin-bottom: 30px;
+  }
+
   .photo-grid {
     margin-top: 0;
   }
 
   .title {
-    font-size: 2em;
+    font-size: 2.1em;
+    margin-top: 0;
   }
 
   .cta {
