@@ -87,6 +87,7 @@ button {
 }
 
 .slideshow {
+  display: flex;
   position: relative;
   grid-area: 1 / 1 / 2 / 13;
 }
@@ -169,7 +170,7 @@ button {
 .prev,
 .next {
   position: absolute;
-  align-self: anchor-center;
+  align-self: center;
   margin: 30px;
   width: 0;
   height: 0;
