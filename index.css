@@ -14,6 +14,12 @@ body {
   background-color: white;
 }
 
+.event-banner {
+  text-align: center;
+  background-color: #efb100ff;
+  padding: 5px 20px;
+}
+
 button {
   background: none;
   color: inherit;
